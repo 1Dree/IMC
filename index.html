@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="caption">
+            <h1>Calculadora IMC</h1>
+            <p>Somente para pessoas acima de 20 anos</p>
+        </div>
+
+        <main>
+            <form>
+                <div class="form-data inputs">
+                    <p>Peso</p>
+
+                    <div>
+                        <input type="text" placeholder="62.5" id="weight"><span>kg</span>
+                    </div>
+                </div>
+
+                <div class="form-data inputs">
+                    <p>Altura</p>
+
+                    <div>
+                        <input type="text" placeholder="1.60" id="height"><span>m</span>
+                    </div>
+                </div>
+
+                <button type="button" id="calculate">calcular</button>
+            </form>
+
+            <div id="result"></div>
+        </main>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

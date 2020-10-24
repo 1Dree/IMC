@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+  --radius:  5px;
+  --green: rgb(91, 243, 91);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+
+h1,
+h3 {
+    font-weight: normal;
+}
+
+.container #caption {
+    padding: 30px;
+    color: white;
+    background-color: var(--green);
+}
+
+#caption p {
+    font-size: 1.1rem;
+}
+
+main {
+    display: flex;
+    
+    background-color: rgb(245, 245, 245);
+}
+
+main form {
+    width: 50%;
+    padding: 30px;
+}
+
+form .form-data {
+    margin-bottom: 18px;
+    color: rgb(51, 51, 51);
+}
+
+.form-data p {
+    margin-bottom: 5px;
+}
+
+.form-data input {
+    width: 90%;
+    font-size: 1rem;
+    color: rgb(51, 51, 51);
+    padding: 15px;
+    margin-right: 8px;
+    border-radius: var(--radius);
+    outline: 0;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.form-data input::placeholder {
+    color: rgb(173, 173, 173);
+}
+
+.form-data span {
+    color: gray;
+}
+
+form button#calculate {
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5em;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    border-radius: var(--radius);
+    background-color: var(--green);
+}
+
+button#calculate:active {
+    background-color: rgb(111, 230, 111);
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: gray;
+    font-size: 1.5rem;
+    margin-left: auto;
+    text-align: center;
+}
+
+#result h3 {
+    color: red;
+}
